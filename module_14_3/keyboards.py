@@ -15,8 +15,7 @@ calories_kb = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text='Рассчитать норму калорий', callback_data='calories'),
         InlineKeyboardButton(text='Формулы расчета', callback_data='formulas')]
-    ],
-    resize_keyboard=True)
+    ])
 
 
 catalog_kb = InlineKeyboardMarkup(
@@ -25,5 +24,4 @@ catalog_kb = InlineKeyboardMarkup(
         InlineKeyboardButton(text='Product2', callback_data="product_buying"),
         InlineKeyboardButton(text='Product3', callback_data="product_buying"),
         InlineKeyboardButton(text='Product4', callback_data="product_buying")]
-    ],
-    resize_keyboard=True)
+    ])
