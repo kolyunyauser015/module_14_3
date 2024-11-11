@@ -13,8 +13,8 @@ start_kb = ReplyKeyboardMarkup(
 
 calories_kb = InlineKeyboardMarkup(
     inline_keyboard=[
-        [KeyboardButton(text='Рассчитать норму калорий', callback_data='calories'),
-        KeyboardButton(text='Формулы расчета', callback_data='formulas')]
+        [InlineKeyboardButton(text='Рассчитать норму калорий', callback_data='calories'),
+        InlineKeyboardButton(text='Формулы расчета', callback_data='formulas')]
     ],
     resize_keyboard=True)
 
