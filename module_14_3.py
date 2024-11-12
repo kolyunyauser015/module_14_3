@@ -71,7 +71,7 @@ async def get_buying_list(message):
         await message.answer(f"Название: Product{number} | Описание: " +
                              description_products.text_product[f'product_{number}'] +
                              f"| Цена: {number * 100}")
-        with open(f'product_photo/p{number}.jpg', 'rb') as ph:
+        with open(f'p{number}.jpg', 'rb') as ph:
             await message.answer_photo(ph)
     await message.answer("Выберите продукт для покупки", reply_markup=keyboards.catalog_kb)
 
